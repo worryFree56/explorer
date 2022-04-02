@@ -1,0 +1,95 @@
+// general
+// $primary: #5c34a2;
+$primary: #093731;
+$primary-new: #1c9f90;
+
+// $secondary: #87e1a9;
+$secondary: #40bfb2;
+// $tertiary: #bf9cff;
+$tertiary: #93e8dd;
+
+$additional-font: #fff;
+
+// footer
+// $footer-background-color: #3c226a;
+$footer-background-color:#093731;
+$footer-title-color: #fff;
+// $footer-text-color: #bda6e7;
+$footer-text-color:#93e8dd;
+$footer-item-disc-color: $secondary;
+.footer-logo { filter: brightness(0) invert(1); }
+
+// dashboard
+$dashboard-line-color-price: $tertiary; // price left border
+
+// $dashboard-banner-chart-legend-label-color: #dcc8ff;
+$dashboard-banner-chart-legend-label-color: #93e8dd;
+
+$dashboard-stats-item-label-color: $dashboard-banner-chart-legend-label-color;
+$dashboard-banner-chart-legend-value-color: #fff; // chart labels
+$dashboard-stats-item-value-color: #fff; // stat values
+
+$dashboard-stats-item-border-color: $secondary; // stat border
+
+$dashboard-banner-gradient-start: $primary; // gradient begin
+
+$dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
+
+// $dashboard-banner-network-plain-container-background-color: #8258cd; // stats bg
+$dashboard-banner-network-plain-container-background-color: #0e534a; // stats bg
+
+
+
+// navigation
+.navbar { box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12); } // header shadow
+$dropdown-menu-item-hover-color: $primary-new !default;
+$dropdown-menu-item-hover-background: rgba($primary-new, .1) !default;
+$header-icon-color-hover: $primary-new;
+$header-icon-border-color-hover: $primary-new;
+
+// buttons
+$btn-line-bg: #fff; // button bg
+$btn-line-color: $primary-new; // button border and font color && hover bg color
+$btn-copy-color: $primary-new; // btn copy
+$btn-qr-color: $primary-new; // btn qr-code
+$btn-address-card-icon-color: $primary-new; // btn address color
+
+//links & tile
+$tile-body-a-color: $primary-new;
+$tile-type-block-color: $primary-new;
+$tile-type-progress-bar-color: $primary-new;
+a.tile-title { color: $primary-new !important; }
+
+// card
+$card-background-1: $primary-new;
+$card-tab-active: $primary-new;
+
+.layout-container {
+	.dashboard-banner-container {
+	  background-image: linear-gradient(
+	    to bottom,
+	    $dashboard-banner-gradient-start,
+	    $dashboard-banner-gradient-end
+	  );
+	}
+}
+
+// Badges
+$badge-neutral-color: $primary-new;
+$badge-neutral-background-color: rgba($primary-new, .1);
+$api-text-monospace-color: $primary-new;
+
+// Tokens dropdown
+.token-balance-dropdown[aria-labelledby="dropdown-tokens"] {
+  .dropdown-items .dropdown-item:hover {
+    color: $primary-new !important;
+  }
+}
+
+// Dark theme
+// $dark-primary: #9b62ff;
+$dark-primary: #40bfb2;
+
+// $dark-secondary: #87e1a9;
+$dark-secondary: #40bfb2;
+$dark-primary-alternate: #7e50d0; 
