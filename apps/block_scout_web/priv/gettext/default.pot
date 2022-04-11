@@ -1034,7 +1034,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract/index.html.eex:76
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:31
-msgid "EVM Version"
+msgid "PVM Version"
 msgstr ""
 
 #, elixir-format

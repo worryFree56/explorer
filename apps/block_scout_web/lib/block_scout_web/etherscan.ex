@@ -2509,7 +2509,7 @@ defmodule BlockScoutWeb.Etherscan do
         key: "evmVersion",
         placeholder: "evmVersion",
         type: "string",
-        description: "The EVM version for the contract."
+        description: "The PVM version for the contract."
       },
       %{
         key: "optimizationRuns",

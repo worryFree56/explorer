@@ -73,7 +73,7 @@
           </dl>
           <dl class="row">
             <%= if smart_contract_verified && target_contract.evm_version do %>
-              <dt class="col-md-2 text-muted"><%= gettext "EVM Version" %></dt>
+              <dt class="col-md-2 text-muted"><%= gettext "PVM Version" %></dt>
               <dd class="col-md-4"><%= target_contract.evm_version %></dd>
               <div class="d-none d-sm-block d-md-none"></br></br></div>
               <div class="d-block d-sm-none"></br></br></div>

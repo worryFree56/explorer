@@ -59,7 +59,7 @@ defmodule Explorer.SmartContract.Solidity.CodeCompilerTest do
               }} = response
     end
 
-    test "compiles smart contract with default evm version", %{
+    test "compiles smart contract with default pvm version", %{
       contract_code_info_modern_compilator: contract_code_info_modern_compilator
     } do
       optimize = true
@@ -106,7 +106,7 @@ defmodule Explorer.SmartContract.Solidity.CodeCompilerTest do
       end)
     end
 
-    test "compiles with constantinople evm version" do
+    test "compiles with constantinople pvm version" do
       optimize = false
       name = "MyTest"
 
