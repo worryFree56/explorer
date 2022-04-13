@@ -231,7 +231,7 @@ defmodule Explorer.ThirdPartyIntegrations.Sourcify do
       %{}
       |> Map.put("name", contract_name)
       |> Map.put("compiler_version", compiler_version)
-      |> Map.put("evm_version", Map.get(settings, "evmVersion"))
+      |> Map.put("evm_version", Map.get(settings, "pvmVersion"))
       |> Map.put("optimization", Map.get(optimizer, "enabled"))
       |> Map.put("optimization_runs", Map.get(optimizer, "runs"))
       |> Map.put("external_libraries", Map.get(settings, "libraries"))

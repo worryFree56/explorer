@@ -2389,6 +2389,7 @@ defmodule Explorer.Chain do
       :kovan -> 42
       :bsc -> 56
       :poa -> 99
+      :plug -> 520
       nil -> nil
       _ -> :undefined
     end

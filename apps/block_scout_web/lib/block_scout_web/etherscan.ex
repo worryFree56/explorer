@@ -2506,8 +2506,8 @@ defmodule BlockScoutWeb.Etherscan do
         description: "Whether or not automatically detect constructor argument."
       },
       %{
-        key: "evmVersion",
-        placeholder: "evmVersion",
+        key: "pvmVersion",
+        placeholder: "pvmVersion",
         type: "string",
         description: "The PVM version for the contract."
       },

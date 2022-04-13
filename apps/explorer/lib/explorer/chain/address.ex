@@ -20,7 +20,8 @@ defmodule Explorer.Chain.Address do
     SmartContractAdditionalSource,
     Token,
     Transaction,
-    Wei
+    Wei,
+    Bech32
   }
 
   alias Explorer.Chain.Cache.NetVersion
@@ -154,15 +155,15 @@ defmodule Explorer.Chain.Address do
 
   def checksum(hash, iodata?) do
     checksum_formatted =
-      case Application.get_env(:explorer, :checksum_function) || :eth do
-        :eth -> eth_checksum(hash)
-        :rsk -> rsk_checksum(hash)
+      case Application.get_env(:explorer, :checksum_function) || :plug do
+        :plug -> eth_checksum(hash)
+        # :rsk -> rsk_checksum(hash)
       end
-
+    #update
     if iodata? do
-      ["0x" | checksum_formatted]
+      ["gx" | checksum_formatted]
     else
-      to_string(["0x" | checksum_formatted])
+      to_string(["gx" | checksum_formatted])
     end
   end
 

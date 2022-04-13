@@ -7,7 +7,6 @@ defmodule Explorer.Chain.Address.CurrentTokenBalance do
   """
 
   use Explorer.Schema
-
   import Ecto.Changeset
   import Ecto.Query, only: [from: 2, limit: 2, offset: 2, order_by: 3, preload: 2]
 

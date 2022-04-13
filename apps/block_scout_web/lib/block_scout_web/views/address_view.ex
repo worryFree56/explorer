@@ -5,7 +5,7 @@ defmodule BlockScoutWeb.AddressView do
 
   alias BlockScoutWeb.{AccessHelpers, LayoutView}
   alias Explorer.{Chain, CustomContractsHelpers}
-  alias Explorer.Chain.{Address, Hash, InternalTransaction, SmartContract, Token, TokenTransfer, Transaction, Wei}
+  alias Explorer.Chain.{Address, Hash, InternalTransaction, SmartContract, Token, TokenTransfer, Transaction, Wei, Bech32}
   alias Explorer.Chain.Block.Reward
   alias Explorer.ExchangeRates.Token, as: TokenExchangeRate
   alias Explorer.SmartContract.{Helper, Writer}
@@ -226,7 +226,8 @@ defmodule BlockScoutWeb.AddressView do
 
   def qr_code(address_hash) do
     address_hash
-    |> to_string()
+    # |> to_string()
+    |> encode("gx",address_hash)
     |> QRCode.to_png()
     |> Base.encode64()
   end
